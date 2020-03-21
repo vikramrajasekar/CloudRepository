@@ -9,6 +9,22 @@
   NUM2 <input type="text" id="num2">
   <br>
   <br>
-  <button onclick="sum()"> ADD </button>
+  <button onclick=calc()>ADD</button>
+  <script>
+    function calc()
+	{
+		var field1=document.getElementById("num1").value;
+		var field2=document.getElementById("num2").value;
+		var Result=parseFloat(field1)+parseFloat(field2);
+			if(!isNaN(Result))
+				{
+		
+					document.getElementById("RESULT").innerHTML="The Output is "+Result
+		
+		
+				}
+	}
+	
+  </script>
 </body>
 </html>
